@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lmsdashboard
+  name: lmsdashboard-deployment
   namespace: test
 spec:
   selector:
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: lmsdashboard
+  name: lmsdashboard-service
   namespace: test
 spec:
   loadBalancerIP: 34.123.14.117
